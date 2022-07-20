@@ -345,6 +345,24 @@ input[type=button] {
   margin: 0;
 }
 
+/*-------- MAP --------*/
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+
+
 /*-------- Faq Page --------*/
 .faq {
   background-color: #527158;
@@ -476,9 +494,23 @@ input[type=button] {
     padding: 30px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   header .content-wrapper {
     justify-content: space-between;
     width: 100%;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -491,6 +523,16 @@ input[type=button] {
 
   .header-divider {
     dispaly: none;
+  }
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
   }
 
   aside .content-wrapper {
@@ -506,6 +548,10 @@ input[type=button] {
       margin: 0;
     }
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -515,7 +561,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 60%;
   }
 
   .reviews article {
@@ -523,7 +569,12 @@ input[type=button] {
     justify-content: space-between;
 
   }
+  
+  .reviews h2 {
+    width: 82%;
+  }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -533,18 +584,24 @@ input[type=button] {
       margin: 100px 0;
   }
 
-  .faq-content {
-    flex-basis: 50%;
-  }
-
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
   }
 
   footer .copyright {
@@ -557,7 +614,7 @@ input[type=button] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20%;
+  padding-top: 20px;
 }
 
 .mission-content p {
@@ -574,28 +631,55 @@ input[type=button] {
   align-items: flex-start;
 }
 
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408954.0257070977!2d-76.0126285!3d36.79566945000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89bac1e8fc1527a7%3A0x4161080a32e0173!2sVirginia%20Beach%2C%20VA!5e0!3m2!1sen!2sus!4v1658335901066!5m2!1sen!2sus' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></div>
+
 /*-------- FAQ Page --------*/
 .faq .content-wrapper {
   justify-content: space-between;
 }
 
 .faq-content {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .faq h2 {
   width: 100%;
 }
+
+.faq h4,
+.faq p {
+    font-size: .875em;
+    line-height: 1.125;
+}
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
 
-  .hero-are h1 {
-    width: 60%;
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
   }
 
   aside .content-wrapper {
@@ -607,6 +691,10 @@ input[type=button] {
         width: 30%;
     }
 
+  .form-description p {
+    font-size: 1.125em;
+  }
+
   .features h2 {
     width: 90%;
   }  
@@ -616,18 +704,30 @@ input[type=button] {
   }
 
   .reviews-article div {
-    width: 45%;
+    width: 42%;
+  }
+  
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /*-------- About Page --------*/
   .mission h2,
     .contact-section .content-wrapper h2 {
         width: 95%;
+        font-size: 3em;
     }
 
   /*--------- FAQ Page --------*/
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
 }
 
