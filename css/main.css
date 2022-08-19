@@ -244,6 +244,16 @@
     justify-content: center;
     align-items: center;
   }
+
+  footer .social-icons i {
+    font-size: 1.675em;
+    background-color: #517157;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+  }
   
   footer .copyright {
     margin: 20px 0;
@@ -657,6 +667,13 @@
     footer p {
         line-height: 1.285;
     }
+
+    footer .social-icons i {
+      width: 25px;
+      height: 25px;
+      padding: 10px;
+      margin: 0 20px;
+    }
   
     footer .copyright {
       width: 100%;
@@ -785,6 +802,13 @@
     footer h4 {
       font-size: 1.875em;
     }
+
+    footer .social-icons i {
+      width: 26px;
+      height: 26px;
+      padding: 20px;
+      margin: 0 30px;
+      
     /* ==========================================================================
     About Page
     ========================================================================== */
